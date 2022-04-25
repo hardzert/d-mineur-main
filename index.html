@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>test</title>
+        <meta name="description" content="démineur simple">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+      
+        <div class="container" id="container">
+            
+            <div class="demineur" id="demineur">
+
+            </div>
+
+            <div class="game"> 
+                <div class="playmenu"> joué au jeu classique</div>
+            <button id="play" class="play" onclick="create_grille(5,5,20)"> classic start </button>
+            
+
+            <div class="custommenu"> customisé votre partie</div>
+            <form class="customplay"  name="custom">
+                <label for="longeur"> longeur</label><br>
+                <input type="text" id="longueur" name="longueur" value="10"><br>
+                <label for="largeur">largeur</label><br>
+                <input type="text" id="largeur" name="largeur" value="10"><br><br>
+                <input type="text" id="proba" name="proba" value="50"><br><br>
+                <input type="button" value="custom start" onclick="customstart()">
+
+              </form> 
+            <div class="win" id="win"> </div>
+        </div>
+    </div>
+        <script src="./renderer.js"></script>
+    </body>
+</html>

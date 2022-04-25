@@ -1,0 +1,64 @@
+.demineur{
+    display: grid;
+ 
+    user-select: none;
+    padding: 1%;
+
+}
+.demineur > div {
+       /* height: 10%; */
+    background-color: black;
+    border: 1px rgb(255, 0, 140) solid;
+    text-align: center;
+ 
+    
+    
+}
+
+.demineur > span {
+    position: relative;
+    background-color: aliceblue;
+}
+
+.game{
+    display: grid;
+    grid-template: 3/3;
+}
+.playmenu{
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto;
+}
+
+.play {
+    display: block;
+    margin: auto;
+    grid-column: 1;
+    grid-row: 3
+    
+}
+.custommenu {
+
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
+
+}
+
+
+.customplay {
+    display: block;
+    margin: auto;
+    grid-column: 2;
+    grid-row: 3
+}
+.win {
+    /* text-align: center; */
+    display: block;
+    margin: auto;
+    grid-column: 1/3;
+    grid-row: 1
+
+ 
+}
+
